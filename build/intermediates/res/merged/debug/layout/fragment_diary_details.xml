@@ -21,7 +21,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textIsSelectable="true"
-                style="?android:attr/textAppearanceMedium"/>
+                style="?android:attr/textAppearanceLarge"/>
     </ScrollView>
     <TextView
             android:id="@+id/tv_diary_note_date"

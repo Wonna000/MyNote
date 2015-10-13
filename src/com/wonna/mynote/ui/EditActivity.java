@@ -7,7 +7,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
+
 import com.baasbox.android.*;
 import com.wonna.mynote.R;
 
@@ -64,13 +64,13 @@ public class EditActivity extends ActionBarActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.add_note, menu);
+        getMenuInflater().inflate(R.menu.save_note, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId()==R.id.add_note_action){
+        if (item.getItemId()==R.id.save_note_action){
             saveOnBaasBox(mAddNotes.getData());
             return true;
         }

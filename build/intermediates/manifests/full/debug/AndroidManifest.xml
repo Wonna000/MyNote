@@ -10,6 +10,10 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:name="com.wonna.mynote.myNote"
         android:allowBackup="true"
@@ -41,6 +45,10 @@
         <activity
             android:name="com.wonna.mynote.ui.EditActivity"
             android:windowSoftInputMode="adjustResize|stateVisible" />
+        <activity
+            android:name="com.wonna.mynote.ui.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
     </application>
 
 </manifest>

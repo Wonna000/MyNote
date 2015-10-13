@@ -3,6 +3,6 @@
     tools:context="${packageName}.${activityClass}">
     <item android:id="@+id/action_forgot_password"
         android:title="@string/action_forgot_password"
-        android:showAsAction="never" />
+        android:showAsAction="always|withText" />
 </menu>
 <!-- From: file:/Users/Wonna/Desktop/MyNote/res/menu/login.xml -->

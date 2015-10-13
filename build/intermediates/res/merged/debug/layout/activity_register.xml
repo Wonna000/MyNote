@@ -1,6 +1,6 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.wonna.mynote.ui.LoginActivitySample">
+    xmlns:tools="http://schemas.android.com/tools">
+
 
     <!-- Login progress -->
     <LinearLayout android:id="@+id/login_status"
@@ -26,7 +26,7 @@
 
     <!-- Login form -->
     <ScrollView
-        android:id="@+id/login_form"
+        android:id="@+id/register_form"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -51,29 +51,37 @@
                 android:imeActionId="@+id/login"
                 android:imeOptions="actionUnspecified" />
 
-            <Button android:id="@+id/sign_in_button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:text="Accedi"
-                    android:paddingLeft="40dp"
-                    android:paddingRight="40dp"
-                    android:background="@drawable/button"
-                    android:textColor="@android:color/white"
-                    android:layout_gravity="center" />
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Età" />
 
-            <TextView android:id="@+id/register_button"
-                    android:layout_marginRight="4dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:text="Registrati"
-                    android:textColor="@android:color/black"
-                    android:textStyle="italic"
-                    android:textAlignment="center"/>
 
+            <Button android:id="@+id/register_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Registrati"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:background="@drawable/button"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center" />
+
+            <Button android:id="@+id/delete_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Elimina Account"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:background="@drawable/button"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center" />
         </LinearLayout>
 
     </ScrollView>
-</merge>
-<!-- From: file:/Users/Wonna/Desktop/MyNote/res/layout/activity_login.xml -->
+
+</merge><!-- From: file:/Users/Wonna/Desktop/MyNote/res/layout/activity_register.xml -->

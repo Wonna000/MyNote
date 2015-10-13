@@ -7,6 +7,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.text.TextUtils;
 import android.util.Log;
@@ -22,10 +23,12 @@ import com.baasbox.android.BaasUser;
 import com.baasbox.android.RequestToken;
 import com.wonna.mynote.R;
 
+import static com.wonna.mynote.R.id.register_button;
+
 /**
  * Created by Wonna on 13/10/2015.
  */
-public class LoginActivity extends FragmentActivity {
+public class RegisterActivity extends FragmentActivity {
     private final static String SIGNUP_TOKEN_KEY = "signup_token_key";
     public static final String EXTRA_USERNAME = "com.baasbox.deardiary.username.EXTRA";
 
@@ -34,7 +37,7 @@ public class LoginActivity extends FragmentActivity {
 
     private EditText mUserView;
     private EditText mPasswordView;
-    private View mLoginFormView;
+    private View mRegisterFormView;
     private View mLoginStatusView;
     private TextView mLoginStatusMessageView;
 
@@ -43,9 +46,9 @@ public class LoginActivity extends FragmentActivity {
     private RequestToken mSignupOrLogin;
 
     @Override
-    protected void onCreate(final Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_register);
 
         if (savedInstanceState!=null){
             mSignupOrLogin = savedInstanceState.getParcelable(SIGNUP_TOKEN_KEY);
@@ -55,7 +58,7 @@ public class LoginActivity extends FragmentActivity {
         mUserView = (EditText) findViewById(R.id.email);
         mUserView.setText(mUsername);
         mLoginStatusView = findViewById(R.id.login_status);
-        mLoginFormView = findViewById(R.id.login_form);
+        mRegisterFormView = findViewById(R.id.register_form);
         mLoginStatusMessageView = (TextView)findViewById(R.id.login_status_message);
         mPasswordView = (EditText) findViewById(R.id.password);
         mPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
@@ -69,14 +72,13 @@ public class LoginActivity extends FragmentActivity {
             }
         });
 
-        findViewById(R.id.register_button).setOnClickListener(new View.OnClickListener() {
+        findViewById(register_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.activity_register);
+                attemptLogin(true);
             }
         });
-
-        findViewById(R.id.sign_in_button).setOnClickListener(new View.OnClickListener(){
+        findViewById(R.id.delete_button).setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 attemptLogin(false);
@@ -218,21 +220,21 @@ public class LoginActivity extends FragmentActivity {
                         }
                     });
 
-            mLoginFormView.setVisibility(View.VISIBLE);
-            mLoginFormView.animate()
+            mRegisterFormView.setVisibility(View.VISIBLE);
+            mRegisterFormView.animate()
                     .setDuration(shortAnimTime)
                     .alpha(show ? 0 : 1)
                     .setListener(new AnimatorListenerAdapter() {
                         @Override
                         public void onAnimationEnd(Animator animation) {
-                            mLoginFormView.setVisibility(show ? View.GONE : View.VISIBLE);
+                            mRegisterFormView.setVisibility(show ? View.GONE : View.VISIBLE);
                         }
                     });
         } else {
             // The ViewPropertyAnimator APIs are not available, so simply show
             // and hide the relevant UI components.
             mLoginStatusView.setVisibility(show ? View.VISIBLE : View.GONE);
-            mLoginFormView.setVisibility(show ? View.GONE : View.VISIBLE);
+            mRegisterFormView.setVisibility(show ? View.GONE : View.VISIBLE);
         }
     }
 

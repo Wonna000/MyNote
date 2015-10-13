@@ -8,11 +8,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/in_title"
-            android:hint="Title"/>
+            android:hint="Titolo"/>
     <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="content"
+            android:hint="contenuto"
             android:id="@+id/in_content"
             android:gravity="top|left"
             android:singleLine="false"

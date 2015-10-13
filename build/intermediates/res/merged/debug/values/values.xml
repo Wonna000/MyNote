@@ -111,7 +111,15 @@
     <!-- From: file:/Users/Wonna/Desktop/MyNote/res/values/dimen.xml -->
     <eat-comment/>
     <dimen name="activity_h_margins">16dp</dimen>
+    <!-- From: file:/Users/Wonna/Desktop/MyNote/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <!-- From: file:/Users/Wonna/Desktop/MyNote/res/values/dimen.xml -->
+    <eat-comment/>
     <dimen name="activity_v_margins">16dp</dimen>
+    <!-- From: file:/Users/Wonna/Desktop/MyNote/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_vertical_margin">16dp</dimen>
     <!-- From: file:/Users/Wonna/Desktop/MyNote/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/values/values.xml -->
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
@@ -157,6 +165,7 @@
     <string name="prompt_password">Password</string>
     <string name="prompt_username">Mail</string>
     <string name="title_activity_login">Accedi</string>
+    <string name="title_activity_register">RegisterActivity</string>
     <!-- From: file:/Users/Wonna/Desktop/MyNote/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -166,6 +175,7 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:padding">16dp</item>
+        <item name="android:textAlignment">center</item>
     </style>
     <!-- From: file:/Users/Wonna/Desktop/MyNote/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/values/values.xml -->
     <eat-comment/>
