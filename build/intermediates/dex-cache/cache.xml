@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/Wonna/Library/Developer/Xamarin/android-sdk-macosx/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="/Users/Wonna/Desktop/MyNote/build/intermediates/pre-dexed/debug/support-v4-19.1.0-b56d26c493fc9c0397a2704d0f5219ff7e0c8d3f.jar" />
+    </item>
+    <item
+        jar="/Users/Wonna/Desktop/MyNote/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28">
+        <dex dex="/Users/Wonna/Desktop/MyNote/build/intermediates/pre-dexed/debug/classes-4f0e019da7884e8f0e3b61ed75d2ba461a01742d.jar" />
+    </item>
+    <item
+        jar="/Users/Wonna/.gradle/caches/modules-2/files-2.1/com.baasbox/baasbox-android/0.8.4/830b85215828767c882ff6fcf35e344513a5d51/baasbox-android-0.8.4.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="0830b85215828767c882ff6fcf35e344513a5d51">
+        <dex dex="/Users/Wonna/Desktop/MyNote/build/intermediates/pre-dexed/debug/baasbox-android-0.8.4-3e90ad9474ec943e2c6875fb1af9342a6373aaa8.jar" />
+    </item>
+
+</items>
